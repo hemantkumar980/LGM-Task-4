@@ -1,0 +1,83 @@
+body{
+  background-color: #ADA2FF;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    padding: 20px;
+    border-radius: 2em;
+    height: 450px;
+    width: 350px;
+    margin: auto;
+    background-color: #C58940;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    border: solid black 1px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+.button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #D0B8A8;
+    color: black;
+    font-size: 2rem;
+    border: solid black 0.5px;
+    width: 60px;
+    border-radius: 30px;
+    height: 60px;
+    outline: none;
+}
+.r-button{
+  font-family: 'Orbitron', sans-serif;
+  background-color: #D0B8A8;
+  color: red;
+  font-size: 2rem;
+  border: solid black 0.5px;
+  width: 60px;
+  border-radius: 30px;
+  height: 60px;
+  outline: none;
+}
+.g-button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #D0B8A8;
+    color: green;
+    font-size: 2rem;
+    border: solid black 0.5px;
+    width: 60px;
+    border-radius: 30px;
+    height: 60px;
+    outline: none;
+}
+
+.button:active {
+    background: blue;
+    -webkit-box-shadow: inset 0px 0px 5px white;
+    -moz-box-shadow: inset 0px 0px 5px white;
+    box-shadow: inset 0px 0px 5px white;
+}
+.g-button:active {
+    background: green;
+    -webkit-box-shadow: inset 0px 0px 5px white;
+    -moz-box-shadow: inset 0px 0px 5px white;
+    box-shadow: inset 0px 0px 5px white;
+}
+.r-button:active {
+    background: red;
+    -webkit-box-shadow: inset 0px 0px 5px white;
+    -moz-box-shadow: inset 0px 0px 5px white;
+    box-shadow: inset 0px 0px 5px white;
+}

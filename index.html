@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <table class="calculator">
+      <tr>
+        <td colspan="4"><input class="display-box" type="text" placeholder="0" id="result" disabled /></td>
+      </tr>
+      <!-- display() function display the value of clicked button -->
+      <tr>
+
+        <!-- clearScreen() function clear all the values  -->
+        <td><input class="r-button" type="button" value="C" onclick="clearScreen()" /> </td>
+
+        <!-- del() function clear last digit  -->
+        <td><input class="g-button" type="button" value="Del" onclick="del()" /> </td>
+
+        <td><input class="g-button" type="button" value="%" onclick="display('/100')" /> </td>
+        <td><input class="g-button" type="button" value="/" onclick="display('/')" /> </td>
+
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="7" onclick="display('7')" /> </td>
+        <td><input class="button" type="button" value="8" onclick="display('8')" /> </td>
+        <td><input class="button" type="button" value="9" onclick="display('9')" /> </td>
+        <td><input class="g-button" type="button" value="*" onclick="display('*')" /> </td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="4" onclick="display('4')" /> </td>
+        <td><input class="button" type="button" value="5" onclick="display('5')" /> </td>
+        <td><input class="button" type="button" value="6" onclick="display('6')" /> </td>
+        <td><input class="g-button" type="button" value="-" onclick="display('-')" /> </td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="1" onclick="display('1')" /> </td>
+        <td><input class="button" type="button" value="2" onclick="display('2')" /> </td>
+        <td><input class="button" type="button" value="3" onclick="display('3')" /> </td>
+        <td><input class="g-button" type="button" value="+" onclick="display('+')" /> </td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="00" onclick="display('00')" /> </td>
+        <td><input class="button" type="button" value="0" onclick="display('0')" /> </td>
+        <td><input class="button" type="button" value="." onclick="display('.')" /> </td>
+
+        <!-- calculate() function evaluate the mathematical expression -->
+        <td><input class="g-button" type="button" value="=" onclick="calculate()" /> </td>
+
+      </tr>
+    </table>
+  </div>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
